@@ -265,7 +265,7 @@
     <repository>
       <id>nexus</id>
       <name>Local Nexus Repository</name>
-      <url>https://da52-2603-3006-0-7500-b4ef-84d3-3a74-eafb.ngrok-free.app/#browse/browse:maven-public</url>
+      <url>https://da52-2603-3006-0-7500-b4ef-84d3-3a74-eafb.ngrok-free.app/repository/maven-public/</url>
       <releases>
         <enabled>true</enabled>
       </releases>
@@ -314,13 +314,13 @@
     <repository>
       <id>nexus</id>
       <name>Nexus release repository</name>
-      <url>https://da52-2603-3006-0-7500-b4ef-84d3-3a74-eafb.ngrok-free.app/#browse/browse:maven-releases</url>
+      <url>https://da52-2603-3006-0-7500-b4ef-84d3-3a74-eafb.ngrok-free.app/repository/maven-releases</url>
     </repository>
     <snapshotRepository>
       <uniqueVersion>false</uniqueVersion>
       <id>nexus</id>
       <name>Nexus snapshot repository</name>
-      <url>https://da52-2603-3006-0-7500-b4ef-84d3-3a74-eafb.ngrok-free.app/#browse/browse:maven-snapshots</url>
+      <url>https://da52-2603-3006-0-7500-b4ef-84d3-3a74-eafb.ngrok-free.app/repository/maven-snapshots</url>
     </snapshotRepository>
   </distributionManagement>
 
