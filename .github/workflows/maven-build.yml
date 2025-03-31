@@ -24,7 +24,7 @@ jobs:
           distribution: 'temurin'
           server-id: nexus
           server-username: admin
-          server-password: POOPOOPEEPEE420!
+          server-password: admin
 
       - name: TESTING
         run: cat ~/.m2/settings.xml
