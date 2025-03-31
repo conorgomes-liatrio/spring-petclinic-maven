@@ -13,17 +13,19 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        java: [ '17' ]
 
     steps:
       - uses: actions/checkout@v3
-      - name: Set up JDK ${{matrix.java}}
+      
+      - name: Set up Nexus Repository
         uses: actions/setup-java@v4
         with:
-          java-version: ${{matrix.java}}
-          distribution: 'adopt'
-          cache: maven
-      - name: Build with Maven Wrapper
-        run: ./mvnw -B package
+          java-version: '17'
+          distribution: 'temurin'
+          server-id: nexus
+          server-username: ${{ secrets.NEXUS_USER }}
+          server-password: ${{ secrets.NEXUS_PASSWORD }}
+
+      - name: Publish package
+        run: mvn clean deploy
+          
