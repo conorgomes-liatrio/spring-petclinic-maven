@@ -23,8 +23,8 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
           server-id: nexus
-          server-username: ${{ secrets.NEXUS_USER }}
-          server-password: ${{ secrets.NEXUS_PASSWORD }}
+          server-username: admin
+          server-password: POOPOOPEEPEE420!
 
       - name: TESTING
         run: cat ~/.m2/settings.xml
